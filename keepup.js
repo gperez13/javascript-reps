@@ -1,6 +1,6 @@
 
 
-//Round 1
+//Round 1- Check
 
 const example = (object) => {
  	let numbers = '';
@@ -20,23 +20,19 @@ const example = (object) => {
 example(['apple','orange','mesopotamia','surethang'])
 
 
-//round 2 ----NEEDS WORK
+//round 2 Check
 
 const transmogrifier = (one, two, three) => {
-	const mult = (one * two);
-	const expo = Math.pow(three); 
+	let mult = (one * two);
+	let expo = Math.pow(mult, three); 
 
-	let result = expo.mult;
-	}
-
- return result
+ console.log(expo)
 
 }
 
-
 transmogrifier(4, 5, 3)
 
-//Round 3
+//Round 3-- Check
  
 const toonify = (accent, sentence) => {
 
@@ -57,7 +53,7 @@ toonify('daffy', 'so you smell like sausage');
 
 
 
-//Round 4
+//Round 4- check
 
 const wordReverse = (string) => {
 
@@ -70,21 +66,17 @@ const wordReverse = (string) => {
 wordReverse('here goes nothing')
 
 
-// Round 5- NEEDS WORK
+// Round 5- Check
 
 const letterReverse = (string) => {
-	string.split(' ');
-
-	for (i = 0; i <= string.length; i++) {
-		let result = reverse(i);
-	}
-
-	return result
-}
+	first = (string.split('').reverse().join(''))
+	second = (first.split(' ').reverse().join(' '))
+	return second
+    }
 
 letterReverse ('Here goes nothing again')
 
-// Round 6
+// Round 6- Check
 
 const longest = (array) => {
 	let longestWord = '';
@@ -102,7 +94,12 @@ longest(['I', 'will', 'be', 'visiting', 'Mesopotamia', 'soon', 'Nesopotania'])
 
 
 
+//Final Round
 
+
+const repMaster = (inpiut, function) => {
+
+} 
 
 
 
