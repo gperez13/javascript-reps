@@ -36,7 +36,7 @@ const transmogrifier = (one, two, three) => {
 
 transmogrifier(4, 5, 3)
 
-//Round 3-  NEEDS WORK
+//Round 3
  
 const toonify = (accent, sentence) => {
 
@@ -47,7 +47,8 @@ newSentence = '';
 		newSentence = sentence.replace(/s/g, 'th')
 	} if (accent === 'elmer') {
 			newSentence = sentence.replace(/r/g, 'w')
-	}
+	} else{ 
+		alert(sentence)}
 	return newSentence
 };
 
@@ -60,7 +61,7 @@ toonify('daffy', 'so you smell like sausage');
 
 const wordReverse = (string) => {
 
-	let backwards =string.split(' ').reverse();
+	let backwards = string.split(' ').reverse();
 
 	return backwards
 
@@ -69,7 +70,7 @@ const wordReverse = (string) => {
 wordReverse('here goes nothing')
 
 
-// Round 5
+// Round 5- NEEDS WORK
 
 const letterReverse = (string) => {
 	string.split(' ');
@@ -86,19 +87,18 @@ letterReverse ('Here goes nothing again')
 // Round 6
 
 const longest = (array) => {
-	longestWord = '';
-	array.split(' ');
+	let longestWord = '';
 
 	for (i = 0;  i < array.length; i++) {
 		if (array[i].length > longestWord.length) {
-			longestWord = array[i]
+		longestWord = array[i]
 		}
 	}
 
 	return longestWord
 }
 
-longest('I will be visiting Mesopotamia soon')
+longest(['I', 'will', 'be', 'visiting', 'Mesopotamia', 'soon', 'Nesopotania'])
 
 
 
