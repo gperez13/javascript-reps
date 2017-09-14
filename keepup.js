@@ -66,3 +66,46 @@ tonnify ('daffy', "so you smell like sausage")
 
 
 
+//Round 4
+
+const wordReverse = (string) => {
+
+	let backwards =string.split(' ').reverse();
+
+	return backwards
+
+}
+
+wordReverse('here goes nothing')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
