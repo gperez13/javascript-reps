@@ -40,28 +40,18 @@ transmogrifier(4, 5, 3)
  
 const toonify = (accent, sentence) => {
 
+newSentence = ''; 
 
-	if(accent ='daffy') {
-			for(let i = 0; i <= sentence.length; i ++){
-				if (i === 's') {
-					sentence[i].replace('s', 'th')
-				} 
-		}
-	} else if (accent === 'elmer') {
-			for(let i = 0; i <= sentence.length; i ++) {
-				if (i === 'r') {
-				sentence[i].replace('r', 'w')
-		}
-	} else {
-		console.log(toonify)
+	if(accent === 'daffy') {
+
+		newSentence = sentence.replace(/s/g, 'th')
+	} if (accent === 'elmer') {
+			newSentence = sentence.replace(/r/g, 'w')
 	}
+	return newSentence
+};
 
-
-	return sentence
-	}
-}
-
-tonnify ('daffy', "so you smell like sausage")
+toonify('daffy', 'so you smell like sausage');
 
 
 
@@ -79,11 +69,36 @@ const wordReverse = (string) => {
 wordReverse('here goes nothing')
 
 
+// Round 5
 
+const letterReverse = (string) => {
+	string.split(' ');
 
+	for (i = 0; i <= string.length; i++) {
+		let result = reverse(i);
+	}
 
+	return result
+}
 
+letterReverse ('Here goes nothing again')
 
+// Round 6
+
+const longest = (array) => {
+	longestWord = '';
+	array.split(' ');
+
+	for (i = 0;  i < array.length; i++) {
+		if (array[i].length > longestWord.length) {
+			longestWord = array[i]
+		}
+	}
+
+	return longestWord
+}
+
+longest('I will be visiting Mesopotamia soon')
 
 
 
