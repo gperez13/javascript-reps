@@ -94,15 +94,26 @@ longest(['I', 'will', 'be', 'visiting', 'Mesopotamia', 'soon', 'Nesopotania'])
 
 
 
-//Final Round
+
+//Final Round- check
+
+const blue = (insert) =>{
+	let mrIo = insert.toUpperCase()
+
+	return mrIo
+}
+
+const repMaster = (input, somethingElse) => {
+ 
+
+	let dud = somethingElse(input);
 
 
-const repMaster = (inpiut, function) => {
-
+	return dud +' proves that I am the rep MASTER!'
 } 
 
 
-
+repMaster( 'If this works, it ', blue)
 
 
 
